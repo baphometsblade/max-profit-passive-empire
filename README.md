@@ -1,36 +1,56 @@
 # Max Profit Passive Income Empire
 
-Fully automated multi-stream passive income system.
+**Fully automated multi-stream passive income system.**  
 Zero daily input after one-time setup.
 
-## Core Components
+## Live Income Streams
 
-1. **Premium Data API** – Recurring Stripe subscriptions + usage-based billing + production webhooks
-2. **Profit Dashboard** – Real-time revenue & system health
-3. **Domain Scanner** – Automated domain opportunity finder
-4. **AI Avatar Service** – High-margin digital product from original ideas
-5. **Supabase Backend** – Persistent customers, subscriptions, payments, domains, referrals
-6. **Landing Page** – Ready frontend for sales
+| Stream              | Type                          | Automation Level     | Status     |
+|---------------------|-------------------------------|----------------------|------------|
+| Premium Data API    | Recurring SaaS + Usage        | Full                 | Production |
+| Domain Scanner      | Asset flipping & leasing      | Full                 | Production |
+| AI Avatar Service   | High-margin digital product   | Full                 | Production |
+| AmbientEnergy       | Smart-home energy data        | Full                 | New        |
+| ThoughtLedger       | Emotional trend data          | Full                 | New        |
+| EchoBrand           | Ambient brand intelligence    | Full                 | New        |
+| GaitGold            | Walking biometrics            | Full                 | New        |
 
-## One-Time Setup
+## Quick Start
 
-1. Create free Supabase project → run `supabase/schema.sql`
-2. Get Stripe keys + webhook secret
-3. Fill `.env`
-4. Deploy to Railway or Vercel
+1. Clone: `git clone https://github.com/baphometsblade/max-profit-passive-empire`
+2. Create Supabase project → run `supabase/schema.sql`
+3. Add Stripe + Supabase keys to `.env`
+4. Deploy `apps/api` to Railway
 5. Point Stripe webhook to `/webhook`
+6. (Optional) Deploy other microservices
 
-After that the system runs itself.
+After that the entire system runs with **zero daily input**.
 
-## Revenue Streams
+## Architecture
 
-- Recurring SaaS subscriptions ($29–$499/mo)
-- Usage-based billing ($0.01/call after free tier)
-- Domain portfolio (flips + leases)
-- AI Avatar generation (high margin digital product)
-- Referral commissions (viral growth)
-- Enterprise upsells (high-ticket)
+```
+apps/
+  api/                 ← Core recurring + usage billing
+  dashboard/           ← Live metrics
+  domain_scanner/      ← Domain opportunities
+  ai_avatar/           ← Digital product
+  ambient_energy/      ← New: energy signatures
+  thought_ledger/      ← New: emotional data
+  echo_brand/          ← New: brand ambient intelligence
+  gait_gold/           ← New: gait biometrics
+frontend/              ← Sales landing page
+supabase/              ← Database schema
+docs/                  ← Deployment guide
+```
 
-This is the cleanest, most production-ready version of the entire empire.
+## Philosophy
+
+Every stream is designed so that:
+- User gives permission once
+- Background collection runs forever
+- Data is anonymized and sold automatically
+- You earn without lifting a finger again
+
+This is the most complete automated passive income system built from the original out-of-the-box ideas.
 
 Repo: https://github.com/baphometsblade/max-profit-passive-empire
